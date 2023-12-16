@@ -23,25 +23,5 @@ namespace WindowsFormsApp7
         {
 
         }
-        static void GamePlay()
-        {
-            string Player1;
-            string Player2;
-
-            int player1score;
-            int player2score;
-
-            int gameround = 0;
-
-
-            void Playerchoice(string one,string two)
-            {
-                
-            }
-            while(gameround < 11)
-            {
-                
-            }
-        }
     }
 }
