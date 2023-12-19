@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Playbtn = new System.Windows.Forms.Button();
+            this.Exitbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,25 +47,27 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome";
             // 
-            // button1
+            // Playbtn
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(331, 172);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 41);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "PLAY";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Playbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Playbtn.Location = new System.Drawing.Point(331, 172);
+            this.Playbtn.Name = "Playbtn";
+            this.Playbtn.Size = new System.Drawing.Size(153, 41);
+            this.Playbtn.TabIndex = 1;
+            this.Playbtn.Text = "PLAY";
+            this.Playbtn.UseVisualStyleBackColor = true;
+            this.Playbtn.Click += new System.EventHandler(this.Playbtn_Click);
             // 
-            // button2
+            // Exitbtn
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(331, 232);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(153, 41);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "EXIT";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Exitbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exitbtn.Location = new System.Drawing.Point(331, 232);
+            this.Exitbtn.Name = "Exitbtn";
+            this.Exitbtn.Size = new System.Drawing.Size(153, 41);
+            this.Exitbtn.TabIndex = 1;
+            this.Exitbtn.Text = "EXIT";
+            this.Exitbtn.UseVisualStyleBackColor = true;
+            this.Exitbtn.Click += new System.EventHandler(this.Exitbtn_Click);
             // 
             // Form1
             // 
@@ -74,8 +76,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Exitbtn);
+            this.Controls.Add(this.Playbtn);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -88,8 +90,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Playbtn;
+        private System.Windows.Forms.Button Exitbtn;
     }
 }
 

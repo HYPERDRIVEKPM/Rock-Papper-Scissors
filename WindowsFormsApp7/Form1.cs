@@ -23,5 +23,17 @@ namespace WindowsFormsApp7
         {
 
         }
+
+        private void Playbtn_Click(object sender, EventArgs e)
+        {
+            Gameplay gameplay = new Gameplay();
+            gameplay.Show();
+            this.Hide();
+        }
+
+        private void Exitbtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
